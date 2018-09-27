@@ -11,6 +11,7 @@ namespace SCHEntity
     [Table("Vehicle")]
     public class Vehicle : AbsEnitiy
     {
+
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int VehicleID { get; set; }
 
