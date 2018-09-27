@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace SCHEntity.DataAceess
 {
+
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
 
