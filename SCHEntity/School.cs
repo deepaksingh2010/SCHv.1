@@ -19,6 +19,7 @@ namespace SCHEntity
         [Index("IX_SchoolName")]
         public string SchoolName { get; set; }
 
+
         [Required]
         [MaxLength(200)]
         public string SchoolAdress { get; set; }
