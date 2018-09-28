@@ -45,7 +45,6 @@ namespace SCHEntity
         [Required]
         [Index("IX_SchoolID")]
         public int? SchoolID { get; set; }
-        public virtual IList<School> Schools { set; get; }
 
     }
 }

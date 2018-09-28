@@ -42,7 +42,5 @@ namespace SCHEntity
         public School School { set; get; }
 
         public int? SchoolID { get; set; }
-
-        public virtual IList<School> Schools { set; get; }
     }
 }
