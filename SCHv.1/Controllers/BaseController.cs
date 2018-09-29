@@ -69,7 +69,7 @@ namespace SCHv._1.Controllers
             }
             return httpResponseMessage;
         }
-        protected virtual HttpResponseMessage UpdateEntity([FromBody]T entity)
+        public virtual HttpResponseMessage UpdateEntity([FromBody]T entity)
         {
             T _entity = Repository.Update(entity);
             if (_entity != null)

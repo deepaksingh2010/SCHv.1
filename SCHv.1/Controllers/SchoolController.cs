@@ -22,8 +22,8 @@ namespace SCHv._1.Controllers
             httpResponseMessage.Headers.Location = new Uri(Request.RequestUri + "/" + (entity.SchoolID).ToString());
             return response;
         }
-        [HttpPost]
-        protected override HttpResponseMessage UpdateEntity([FromBody] School entity)
+        [HttpPut]
+        public override HttpResponseMessage UpdateEntity([FromBody] School entity)
         {
             HttpResponseMessage response = base.UpdateEntity(entity);
             httpResponseMessage.Headers.Location = new Uri(Request.RequestUri + "/" + (entity.SchoolID).ToString());
